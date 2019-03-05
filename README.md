@@ -1,2 +1,3 @@
 # git_docker
-use to store dockerfile
+* use to store dockerfile
+
