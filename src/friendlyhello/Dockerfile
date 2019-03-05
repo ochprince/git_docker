@@ -1,4 +1,5 @@
 FROM python:2.7-slim
+
 WORKDIR /app
 
 #Copy the current directory contents into the container at /app
