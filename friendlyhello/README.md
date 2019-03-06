@@ -1,3 +1,2 @@
-# git_docker
-* use to store dockerfile
-
+# friendlyhello
+* FROM (Docker Get Started Part2)[https://docs.docker.com/get-started/part2/]
