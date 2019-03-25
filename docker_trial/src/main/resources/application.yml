@@ -1,0 +1,37 @@
+server:
+  port: 8080
+#  ssl:
+#    key-store: classpath:dblue.keystore
+#    key-store-password: colasoftframework
+#    key-password: csf[D_b%]lue
+
+spring:
+  profiles:
+    active: druid, h2
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:h2:file:~/.h2/csf_docker_trial_db
+    username: csf
+    password: csf
+#    url: jdbc:mysql://mysql:3306/csf_docker_trial_db
+#    username: csf
+#    password: csf
+csf:
+  core:
+    thymeleaf-cache: false
+#    developer-mode: true
+  security:
+    check-code-mode: none
+    permit-all-patterns:
+      - /env
+    permit-login-names:
+      - user
+      - email
+      - phone
+  common:
+    theme-enable: true
+    i18n-enable: true
+    snapshot: true
+    init-url: /bs/log
